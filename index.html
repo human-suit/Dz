@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Frontend Разработка</title>
 </head>
@@ -11,7 +14,11 @@
         <div class="container">
             <div class="flex">
                 <div class="logo">
-                    <a href="#">MNTN</a>
+                    <a href="#"><img src="./img/Logo.svg" alt="logo"></a>
+                </div>
+                <div class="hamb__field" id="hamb">
+                    <span class="bar"></span> <span class="bar"></span>
+                    <span class="bar"></span>
                 </div>
                 <nav>
                     <ol class="flex">
@@ -21,21 +28,51 @@
                     </ol>
                 </nav>
                 <div class="account">
-                    <img src="./img/account_circle_24px.svg" alt="Account">
-                    <a href="#">Account</a>
+                    <a href="#"><img src="./img/twitter.svg" alt="Account"> Account </a>
+                </div>
+
+                <div class="popup" id="popup">
+                    <div class="pad">
+                        <div class="logo2">
+                            <a href="#"><img src="./img/BlackLogo.svg" alt="BlackLogo"></a>
+                        </div>
+                        <div class="flex">
+                            <nav>
+                                <ol>
+                                    <li><a href="#">Equipment</a></li>
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                </ol>
+                            </nav>
+                            <div>
+                                <div class="grid">
+                                    <a href="#">
+                                        Follow us 
+                                        <img src="./img/BlackInstagram.svg" alt="instagram">
+                                        
+                                    </a>
+                                    <a href="#"><img src="./img/BlackTwitter.svg" alt="twitter"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="#"><img src="./img/BlackHuman.svg" alt="Account"> Account </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
     <main>
-        <section id="ship1">
-            <div class="container">
-                <div class="flex">
+        <section id="ship1" >
+            <div class="container wrap">
+                <div class="flex padding relative">
                     <div class="left">
                         <a href="#">
                             Follow us 
                             <img src="./img/instagram.svg" alt="instagram">
                         </a>
+                        <a href="#"><img src="./img/twitter.svg" alt="twitter"></a>
                     </div>
                     <div class="center">
                         <div class="position_left">
@@ -45,8 +82,7 @@
                             </div>
                             <div class="body_midle">
                                 <h1>Be Prepared For The
-                                    Mountains And </br>
-                                    Beyond!
+                                    Mountains And Beyond!
                                 </h1>
                             </div>
                             <div class="foter_bot">
@@ -55,11 +91,11 @@
                         </div>
                     </div>
                     <div class="right">
-                        <ol>
+                        <ol class="scrollto">
                             <li class="white"><a href="#">Start</a></li>
-                            <li><a href="#">01</a></li>
-                            <li><a href="#">02</a></li>
-                            <li><a href="#">03</a></li>
+                            <li><a href="#ship2">01</a></li>
+                            <li><a href="#ship3">02</a></li>
+                            <li><a href="#ship4">03</a></li>
                         </ol>
                     </div>
                 </div>
@@ -71,7 +107,7 @@
                     <div class="margin">
                         <div class="relative flex">
                             <div class="border"></div>
-                            <h3>a hiking guide</h3>
+                            <h3>GEt Started</h3>
                             <div class="position_absolute">
                                 <h2>
                                     01
@@ -79,14 +115,16 @@
                             </div>
                         </div>
                         <div>
-                            <h1>Be Prepared For The
-                                Mountains And
-                                Beyond!
+                            <h1>
+                                What level of 
+                                hiker are you?
                             </h1>
                             <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat nihil incidunt tenetur possimus dolorem vero, doloremque molestias. Exercitationem, ut distinctio obcaecati dolore inventore possimus optio praesentium nostrum officia. Quibusdam, animi.
-                                Eligendi aperiam ipsa recusandae consequatur cum maxime, omnis minima laboriosam porro quaerat. Explicabo, qui hic soluta molestias beatae maiores? Corrupti officia delectus reiciendis velit quod aspernatur. Obcaecati iure aliquam iusto!
-                                Distinctio ex cupiditate assumenda beatae. Officia nisi suscipit ullam velit tenetur animi necessitatibus. Ducimus quisquam laudantium similique saepe beatae facere aliquid aperiam incidunt facilis, blanditiis fugit at pariatur reprehenderit perferendis!
+                                Determining what level of hiker you are can be an important tool 
+                                when planning future hikes. This hiking level guide will help you plan 
+                                hikes according to different hike ratings set by various websites like 
+                                All Trails and Modern Hiker. What type of hiker are you – novice, 
+                                moderate, advanced moderate, expert, or expert backpacker? 
                             </p>
                         </div>
                         <div>
@@ -103,28 +141,30 @@
         <section id="ship3">
             <div class="container">
                 <div class="block">
-                    <div>
+                    <div class="swith">
                         <img src="./img/02.png" alt="1 card">
                     </div>
                     <div class="margin">
                         <div class="relative flex">
                             <div class="border"></div>
-                            <h3>a hiking guide</h3>
+                            <h3>Hiking Essentials</h3>
                             <div class="position_absolute">
                                 <h2>
                                     02
                                 </h2>
                             </div>
                         </div>
-                        <div>
-                            <h1>Be Prepared For The
-                                Mountains And
-                                Beyond!
+                        <div class="textRight">
+                            <h1>Picking the right 
+                                Hiking Gear!
                             </h1>
                             <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat nihil incidunt tenetur possimus dolorem vero, doloremque molestias. Exercitationem, ut distinctio obcaecati dolore inventore possimus optio praesentium nostrum officia. Quibusdam, animi.
-                                Eligendi aperiam ipsa recusandae consequatur cum maxime, omnis minima laboriosam porro quaerat. Explicabo, qui hic soluta molestias beatae maiores? Corrupti officia delectus reiciendis velit quod aspernatur. Obcaecati iure aliquam iusto!
-                                Distinctio ex cupiditate assumenda beatae. Officia nisi suscipit ullam velit tenetur animi necessitatibus. Ducimus quisquam laudantium similique saepe beatae facere aliquid aperiam incidunt facilis, blanditiis fugit at pariatur reprehenderit perferendis!
+                                The nice thing about beginning hiking is that you don’t really need 
+                                any special gear, you can probably get away with things you 
+                                already have.
+                                Let’s start with clothing. A typical mistake hiking beginners make 
+                                is wearing jeans and regular clothes, which will get heavy and chafe 
+                                wif they get sweaty or wet.
                             </p>
                         </div>
                         <div>
@@ -140,7 +180,7 @@
                     <div class="margin">
                         <div class="relative flex">
                             <div class="border"></div>
-                            <h3>a hiking guide</h3>
+                            <h3>where you go is the key</h3>
                             <div class="position_absolute">
                                 <h2>
                                     03
@@ -148,14 +188,15 @@
                             </div>
                         </div>
                         <div>
-                            <h1>Be Prepared For The
-                                Mountains And
-                                Beyond!
+                            <h1>Understand Your 
+                                Map & Timing
                             </h1>
                             <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat nihil incidunt tenetur possimus dolorem vero, doloremque molestias. Exercitationem, ut distinctio obcaecati dolore inventore possimus optio praesentium nostrum officia. Quibusdam, animi.
-                                Eligendi aperiam ipsa recusandae consequatur cum maxime, omnis minima laboriosam porro quaerat. Explicabo, qui hic soluta molestias beatae maiores? Corrupti officia delectus reiciendis velit quod aspernatur. Obcaecati iure aliquam iusto!
-                                Distinctio ex cupiditate assumenda beatae. Officia nisi suscipit ullam velit tenetur animi necessitatibus. Ducimus quisquam laudantium similique saepe beatae facere aliquid aperiam incidunt facilis, blanditiis fugit at pariatur reprehenderit perferendis!
+                                To start, print out the hiking guide and map. If it’s raining, throw 
+                                them in a Zip-Lock bag. Read over the guide, study the map, and 
+                                have a good idea of what to expect. I like to know what my next 
+                                landmark is as I hike. For example, I’ll read the guide and know that 
+                                say, in a mile, I make a right turn at the junction.. 
                             </p>
                         </div>
                         <div>
@@ -173,36 +214,48 @@
         <div class="container">
             <div class="flex">
                 <div>
-                    <a href="#">MNTN</a>
+                    <a href="#"><img src="./img/Logo.svg" alt="logo"></a>
                     <p>
-                        Lorem ipsum dolor sit, amet consectetur 
-                        adipisicing elit. Alias veniam cum 
-                        necessitatibus ipsum vel.
+                        Get out there & discover your next 
+                        slope, mountain & destination!
                     </p>
                 </div>
                 <div>
                     <ul>
-                        <li style="color: #DFC178;">More on The Blog</li>
-                        <li>About MNTN</li>
-                        <li>Contrlbutors & Writers</li>
-                        <li>Write For Us</li>
-                        <li>Contact Us</li>
-                        <li>Privacy Policy</li>
+                        <li>
+                           <a style="color: #DFC178; 
+                           font-size: 21px; font-weight: bold;" 
+                           href="#">More on The Blog</a> 
+                        </li>
+                        <li><a href="#">About MNTN</a></li>
+                        <li><a href="#">Contrlbutors & Writers</a></li>
+                        <li><a href="#">Write For Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
                     </ul>
                 </div>
                 <div>
                     <ul>
-                        <li style="color: #DFC178;">More on MNTN</li>
-                        <li>The Team</li>
-                        <li>Jobs</li>
-                        <li>Press</li>
+                        <li>
+                        <a style="color: #DFC178; 
+                           font-size: 21px; font-weight: bold;" 
+                           href="#">More on MNTN</a>
+                    </li>
+                        <li><a href="#">The Team</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Press</a></li>
                     </ul>
                 </div>
             </div>
             <div>
-                <h4>Copyrignt 2019 MNTN Inc. Terms & Privocy</h4>
+                <h4>Copyright 2019 MNTN, Inc. Terms & Privacy</h4>
             </div>
         </div>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="module" src="./js/main.js"></script>
+
+
 </body>
 </html>

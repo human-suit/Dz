@@ -1,7 +1,10 @@
 
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"); */
+
  html {
     line-height: 1.15; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
+    font-family: "Poppins";
   }
   body {
     color: white;
@@ -182,16 +185,20 @@
 
   ul{
     list-style: none;
+    margin-left: -38px;
   }
   ul > li{
     margin-top: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
   }
   
 header{
   position: fixed;
   width: 100%;
-  padding: 20px 0px;
   z-index: 3;
+  background-color: transparent;
 }
 header > div > div{
   justify-content: space-between;
@@ -200,19 +207,30 @@ header > div > div > nav{
   margin-top: -15px;
 }
 header > div > div > nav > ol > li{
-  margin-left: 20px;
-  font-weight: bold;  
+  margin-left: 20px;  
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 27px;
+}
+.account > a{
+  font-size: 17px;
 }
 .container{
-    max-width: 1326px;
+    max-width: 1376px;
     margin: 0 auto;
-    padding: 10px 20px;
+    padding: 20px 50px;
 }
-.ship1{
-    
+.wrap{
     background-image: url(../img/BG1.png);
-    background-size: contain;
     background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 1682px;
+    width: 1536px;
 }
 .flex{
   display: flex;
@@ -230,35 +248,32 @@ a{
 ol{
   list-style: none;
 }
-#ship1{
-  padding: 200px 0px 400px 0px;
-}
 #ship1 > div > div {
   justify-content: space-between;
 }
-.logo{
-  font-weight: bold;
-  font-size: 28px;
-} 
 section{
   background-color: #0B1D27;
 }
 .border{
   height: 1px;
-  width: 60px;
-  background-color: #FBD783;
+  width: 70px;
+  background-color: #FBD784;
 }
 h3{
-  color: #FBD783;
+  color: #FBD784;
 }
 .block > div > div > h3{
   margin: -10px 0px 0px 20px;
   text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: 6px;
+  font-weight: 800;
+  line-height: 27px;
+  font-size: 18px;
 }
 .block > div > div > a{
-  color: #FBD783;
-  font-size: 16px;
+  color: #FBD784;
+  font-size: 18px;
+  font-weight: bold;
 }
 .relative{
   position: relative;
@@ -268,20 +283,26 @@ h3{
 }
 .position_absolute{
   position: absolute;
-  margin: -460px 0px 0px -150px;
+  margin: -390px 0px 0px -70px;
 }
 .position_absolute h2{
-  font-size: 280px;
+  font-size: 240px;
   color: #23343C;
   z-index: 5;
 }
-#ship1, #ship2, #ship3{
+#ship1{
   position: relative;
-  padding: 160px 0px;
+}
+#ship2, #ship3, #ship4{
+  position: relative;
+  padding: 0px 0px 200px 0px;
+}
+.padding{
+  padding: 260px 0px;
 }
 .margin{
   margin: 260px 0px 0px 150px;
-  width: 600px;
+  width: 620px;
   text-align: left;
 }
 
@@ -294,9 +315,15 @@ footer > div > div{
 }
 footer > div > div > h4{
   color: #848D92;
+  opacity: 50%;
+  font-size: 18px;
+  font-weight: 400;
 }
 footer > div > div > div p{
   width: 360px;
+  line-height: 32px;
+  font-size: 18px;
+  font-weight: 600;
 }
 .right li{
   padding-right: 40px;
@@ -308,10 +335,14 @@ footer > div > div > div p{
 .white{
   border-right: 1px solid white !important;
 }
-.left > a{
-  font-size:21px;
-  font-weight: bold;
+.left{
+  margin-top: 60px;
   writing-mode: vertical-rl;
+}
+.left > a{
+  font-size:18px;
+  font-weight: 700;
+  line-height: 27px;
 }
 .left > a > img{
   margin: 10px 0px;
@@ -321,10 +352,687 @@ footer > div > div > div p{
   text-transform: uppercase;
   letter-spacing: 5px;
 }
-.center h1{
-  font-size: 50px;
-  width: 600px;
+.center{
+  width: 900px;
+  margin-left: 100px;
 }
 .foter_bot > a > img{
   margin: 0px 0px -8px 5px;
+}
+.body_midle > h1{
+  font-size: 88px;
+  font-family: 'Playfair Display';
+  font-weight: 600px;
+  line-height: 100px;
+}
+.block > div > div > h1{
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 90px;
+}
+.block > div > div > p{
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 32px;
+}
+.hamb__field{
+  visibility: hidden;
+  display: none;
+}
+
+
+
+:root {
+  --gap-header: 400px;
+  --padding-all: 20px 80px;
+  /* --cont-width: #235ad1; */
+  /* var(--main-bg-color) */
+}
+
+.popup{
+  display: none;
+}
+body.noscroll {
+  overflow: hidden;
+}
+.popup {
+  position: fixed;
+  top: 0px;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  z-index: 2;
+  display: flex;
+  transition: 0.3s;
+  color: black;
+}
+
+.popup.open {
+  left: 0;
+}
+.hamb__field {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.bar {
+  position:relative;
+  display: block;
+  width: 30px;
+  height: 3px;
+  margin: 6px auto;
+  background-color: #fff;
+  transition: 0.2s;
+  z-index: 5;
+  margin-left:120px;
+}
+.black{
+  background-color: #000 !important;
+}
+.logo2 a{
+  color: black;
+  font-size: 28px;
+  font-weight: bold;
+}
+.pad{
+  padding: 30px;
+}
+.popup > div > div > nav{
+  visibility: visible;
+  margin-top: 60px;
+  opacity: 1;
+  padding-bottom: 80px;
+}
+.popup > div > div > nav > ol > li{
+  margin: 30px 0px 0px -40px;
+}
+.popup > div > div > nav > ol > li > a{
+  color: black;
+  font-size: 24px;
+  font-weight: 600;
+}
+.popup > div > div > div > div > a{
+  color: black;
+  writing-mode: vertical-rl;
+  font-size: 18px;
+  font-weight:600;
+  width: 20px;
+}
+.popup > div > div > a{
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+}
+.popup > div > div > a > img{
+  margin-bottom: -8px;
+}
+.grid > a > img{
+  margin-top: 10px;
+}
+.grid{
+  margin-top: 100px;
+  margin-left: 180px;
+  display: grid;
+}
+
+@media (max-width:1920px) {
+    
+}
+@media (max-width:1280px) {
+  .block > div > div > p{
+    font-size: 18px;
+    line-height: 32px;
+    width: 520px;
+  }
+}
+@media (max-width:821px) {
+  body{
+    overflow-x: hidden;
+  }
+  .wrap{
+    height: 900px;
+    width: 329px;
+  }
+  .container{
+    width: 800px;
+    padding: 20px 10px;
+  }
+  .border{
+    width: 60px;
+  }
+  .center h3{
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .center h1{
+    font-size: 45px;
+    line-height: 45px;
+  }
+  .body_midle{
+    width: 400px;
+  }
+  .foter_bot{
+    margin-top: 200px;
+  }
+  .foter_bot a{
+    font-weight: 14px;
+  }
+  .foter_bot > a > img{
+    margin-left: 20px;
+  }
+  .right li{
+    border-right: 3px solid rgb(124, 124, 124);
+  }
+  .white{
+    border-right: 3px solid white !important;
+  }
+  header{
+    position: absolute;
+  }
+  .block img{
+    width: 300px;
+    height: 600px;
+    margin: 50px 0px 0px 20px;
+  }
+  .margin img{
+    width: 24px;
+    height: 24px;
+  }
+  .margin{
+    margin: 100px 0px 0px 20px;
+  }
+  .block > div > div > h1{
+    font-size: 38px;
+    width: 380px;
+    line-height: 42px;
+  }
+  .block > div > div > p{
+    font-size: 18px;
+    line-height: 32px;
+    width: 450px;
+  }
+  .block > div > div > a{
+    font-size: 18px;
+  }
+  .block > div > div > a > img{
+    margin: 0px 0px -10px 10px;
+  }
+  .block > div > div > h3{
+    font-size: 16px;
+    letter-spacing: 4px;
+  }
+  .position_absolute h2{
+    font-size: 100px;
+  }
+  .position_absolute{
+    margin: -150px 0px 0px 15px;
+  }
+  #ship2, #ship3, #ship4{
+    padding: 0px 0px 220px 0px;
+  }
+  .textRight{
+    text-align: right;
+  }
+  .textRight h1{
+    margin-left: 70px;
+  }
+  footer > div > div > h4{
+    font-size: 14px;
+  }
+  footer > div > div > div p{
+    font-size: 16px;
+  }
+  footer > div > div > div > ul > li > a{
+    font-size: 18px;
+  }
+}
+@media (max-width:543px) {
+  body{
+    overflow-x: hidden;
+  }
+  .wrap{
+    height: 900px;
+    width: 329px;
+  }
+  .container{
+    width: 380px;
+    padding: 20px 10px;
+  }
+  header > div > div > nav{
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+  }
+  .hamb__field{
+    visibility: visible;
+    display: block;
+    width: 100px;
+  }
+  .account > a{
+    visibility: hidden;
+    display: none;
+  }
+  .padding{
+    display: grid;
+  }
+  .left{
+    position: relative;
+    margin: -30px 0px 0px 0px;
+    writing-mode:horizontal-tb;
+    text-align: right;
+    z-index: 2;
+  }
+  .left > a > img{
+    margin: 0px 10px -5px 10px;
+  }
+  .center{
+    margin-top: 100px;
+    width: 360px;
+    margin-left: 0;
+  }
+  .border{
+    width: 60px;
+  }
+  .center h3{
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .center h1{
+    font-size: 30px;
+    line-height: 45px;
+  }
+  .body_midle{
+    width: 260px;
+  }
+  .foter_bot{
+    margin-top: 200px;
+  }
+  .foter_bot a{
+    font-weight: 14px;
+  }
+  .foter_bot > a > img{
+    margin-left: 20px;
+  }
+  .right{
+    position: absolute;
+    right: 0;
+    margin: 450px 20px 0px 0px;
+  }
+  .right li{
+    border-right: 3px solid rgb(124, 124, 124);
+  }
+  .white{
+    border-right: 3px solid white !important;
+  }
+  header{
+    position: absolute;
+  }
+  .block{
+    display: grid;
+    margin-left: -150px;
+    height: 800px;
+  }
+  .block img{
+    width: 300px;
+    height: 400px;
+    margin: 50px 0px 0px 180px;
+  }
+  .margin img{
+    width: 24px;
+    height: 24px;
+  }
+  .margin{
+    margin: 260px 0px 0px 150px;
+  }
+  .block > div > div > h1{
+    font-size: 24px;
+    width: 300px;
+    line-height: 32px;
+  }
+  .block > div > div > p{
+    font-size: 14px;
+    line-height: 32px;
+    width: 370px;
+  }
+  .block > div > div > a{
+    font-size: 14px;
+  }
+  .block > div > div > a > img{
+    margin: 0px 0px -10px 10px;
+  }
+  .block > div > div > h3{
+    font-size: 16px;
+    letter-spacing: 4px;
+  }
+  .position_absolute h2{
+    font-size: 100px;
+  }
+  .position_absolute{
+    margin: -150px 0px 0px 15px;
+  }
+  #ship2, #ship3, #ship4{
+    padding: 0px 0px 220px 0px;
+  }
+  .textRight{
+    text-align: right;
+  }
+  .textRight h1{
+    margin-left: 70px;
+  }
+  .swith {
+    position: absolute;
+    margin-top: 620px;
+  }
+  footer  > div > .flex{
+    display: grid;
+  }
+  footer > div > div > h4{
+    font-size: 14px;
+  }
+  footer > div > div > div p{
+    font-size: 16px;
+  }
+  footer > div > div > div > ul > li > a{
+    font-size: 18px;
+  }
+}
+@media (max-width:479px) {
+  body{
+    overflow-x: hidden;
+  }
+  .wrap{
+    height: 900px;
+    width: 329px;
+  }
+  .container{
+    width: 380px;
+    padding: 20px 10px;
+  }
+  header > div > div > nav{
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+  }
+  .hamb__field{
+    visibility: visible;
+    display: block;
+    width: 100px;
+  }
+  .account > a{
+    visibility: hidden;
+    display: none;
+  }
+  .padding{
+    display: grid;
+  }
+  .left{
+    position: relative;
+    margin: -30px 0px 0px 0px;
+    writing-mode:horizontal-tb;
+    text-align: right;
+    z-index: 2;
+  }
+  .left > a > img{
+    margin: 0px 10px -5px 10px;
+  }
+  .center{
+    margin-top: 100px;
+    width: 360px;
+    margin-left: 0;
+  }
+  .border{
+    width: 60px;
+  }
+  .center h3{
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .center h1{
+    font-size: 30px;
+    line-height: 45px;
+  }
+  .body_midle{
+    width: 260px;
+  }
+  .foter_bot{
+    margin-top: 200px;
+  }
+  .foter_bot a{
+    font-weight: 14px;
+  }
+  .foter_bot > a > img{
+    margin-left: 20px;
+  }
+  .right{
+    position: absolute;
+    right: 0;
+    margin: 450px 20px 0px 0px;
+  }
+  .right li{
+    border-right: 3px solid rgb(124, 124, 124);
+  }
+  .white{
+    border-right: 3px solid white !important;
+  }
+  header{
+    position: absolute;
+  }
+  .block{
+    display: grid;
+    margin-left: -150px;
+    height: 800px;
+  }
+  .block img{
+    width: 300px;
+    height: 400px;
+    margin: 50px 0px 0px 180px;
+  }
+  .margin img{
+    width: 24px;
+    height: 24px;
+  }
+  .margin{
+    margin: 260px 0px 0px 150px;
+  }
+  .block > div > div > h1{
+    font-size: 24px;
+    width: 300px;
+    line-height: 32px;
+  }
+  .block > div > div > p{
+    font-size: 14px;
+    line-height: 32px;
+    width: 370px;
+  }
+  .block > div > div > a{
+    font-size: 14px;
+  }
+  .block > div > div > a > img{
+    margin: 0px 0px -10px 10px;
+  }
+  .block > div > div > h3{
+    font-size: 16px;
+    letter-spacing: 4px;
+  }
+  .position_absolute h2{
+    font-size: 100px;
+  }
+  .position_absolute{
+    margin: -150px 0px 0px 15px;
+  }
+  #ship2, #ship3, #ship4{
+    padding: 0px 0px 220px 0px;
+  }
+  .textRight{
+    text-align: right;
+  }
+  .textRight h1{
+    margin-left: 70px;
+  }
+  .swith {
+    position: absolute;
+    margin-top: 620px;
+  }
+  footer  > div > .flex{
+    display: grid;
+  }
+  footer > div > div > h4{
+    font-size: 14px;
+  }
+  footer > div > div > div p{
+    font-size: 16px;
+  }
+  footer > div > div > div > ul > li > a{
+    font-size: 18px;
+  }
+} 
+@media (max-width:394px) {
+    body{
+      overflow-x: hidden;
+    }
+    .wrap{
+      height: 900px;
+      width: 329px;
+    }
+    .container{
+      width: 380px;
+      padding: 20px 10px;
+    }
+    header > div > div > nav{
+      opacity: 0;
+      visibility: hidden;
+      display: none;
+    }
+    .hamb__field{
+      visibility: visible;
+      display: block;
+      width: 100px;
+    }
+    .account > a{
+      visibility: hidden;
+      display: none;
+    }
+    .padding{
+      display: grid;
+    }
+    .left{
+      position: relative;
+      margin: -30px 0px 0px 0px;
+      writing-mode:horizontal-tb;
+      text-align: right;
+      z-index: 2;
+    }
+    .left > a > img{
+      margin: 0px 10px -5px 10px;
+    }
+    .center{
+      margin-top: 100px;
+      width: 360px;
+      margin-left: 0;
+    }
+    .border{
+      width: 60px;
+    }
+    .center h3{
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .center h1{
+      font-size: 30px;
+      line-height: 45px;
+    }
+    .body_midle{
+      width: 260px;
+    }
+    .foter_bot{
+      margin-top: 200px;
+    }
+    .foter_bot a{
+      font-weight: 14px;
+    }
+    .foter_bot > a > img{
+      margin-left: 20px;
+    }
+    .right{
+      position: absolute;
+      right: 0;
+      margin: 450px 20px 0px 0px;
+    }
+    .right li{
+      border-right: 3px solid rgb(124, 124, 124);
+    }
+    .white{
+      border-right: 3px solid white !important;
+    }
+    header{
+      position: absolute;
+    }
+    .block{
+      display: grid;
+      margin-left: -150px;
+      height: 800px;
+    }
+    .block img{
+      width: 300px;
+      height: 400px;
+      margin: 50px 0px 0px 180px;
+    }
+    .margin img{
+      width: 24px;
+      height: 24px;
+    }
+    .margin{
+      margin: 260px 0px 0px 150px;
+    }
+    .block > div > div > h1{
+      font-size: 24px;
+      width: 300px;
+      line-height: 32px;
+    }
+    .block > div > div > p{
+      font-size: 14px;
+      line-height: 32px;
+      width: 370px;
+    }
+    .block > div > div > a{
+      font-size: 14px;
+    }
+    .block > div > div > a > img{
+      margin: 0px 0px -10px 10px;
+    }
+    .block > div > div > h3{
+      font-size: 16px;
+      letter-spacing: 4px;
+    }
+    .position_absolute h2{
+      font-size: 100px;
+    }
+    .position_absolute{
+      margin: -150px 0px 0px 15px;
+    }
+    #ship2, #ship3, #ship4{
+      padding: 0px 0px 220px 0px;
+    }
+    .textRight{
+      text-align: right;
+    }
+    .textRight h1{
+      margin-left: 70px;
+    }
+    .swith {
+      position: absolute;
+      margin-top: 620px;
+    }
+    footer  > div > .flex{
+      display: grid;
+    }
+    footer > div > div > h4{
+      font-size: 14px;
+    }
+    footer > div > div > div p{
+      font-size: 16px;
+    }
+    footer > div > div > div > ul > li > a{
+      font-size: 18px;
+    }
 }
