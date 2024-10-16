@@ -1,0 +1,101 @@
+@media (max-width:821px) {
+    body{
+      overflow-x: hidden;
+    }
+    .wrap{
+      height: 900px;
+      width: 329px;
+    }
+    .container{
+      width: 800px;
+      padding: 20px 10px;
+    }
+    .border{
+      width: 60px;
+    }
+    .center h3{
+      font-size: 18px;
+      font-weight: 700;
+    }
+    .center h1{
+      font-size: 45px;
+      line-height: 45px;
+    }
+    .body_midle{
+      width: 400px;
+    }
+    .foter_bot{
+      margin-top: 200px;
+    }
+    .foter_bot a{
+      font-weight: 14px;
+    }
+    .foter_bot > a > img{
+      margin-left: 20px;
+    }
+    .right li{
+      border-right: 3px solid rgb(124, 124, 124);
+    }
+    .white{
+      border-right: 3px solid white !important;
+    }
+    header{
+      position: absolute;
+    }
+    .block img{
+      width: 300px;
+      height: 600px;
+      margin: 50px 0px 0px 20px;
+    }
+    .margin img{
+      width: 24px;
+      height: 24px;
+    }
+    .margin{
+      margin: 100px 0px 0px 20px;
+    }
+    .block > div > div > h1{
+      font-size: 38px;
+      width: 380px;
+      line-height: 42px;
+    }
+    .block > div > div > p{
+      font-size: 18px;
+      line-height: 32px;
+      width: 450px;
+    }
+    .block > div > div > a{
+      font-size: 18px;
+    }
+    .block > div > div > a > img{
+      margin: 0px 0px -10px 10px;
+    }
+    .block > div > div > h3{
+      font-size: 16px;
+      letter-spacing: 4px;
+    }
+    .position_absolute h2{
+      font-size: 100px;
+    }
+    .position_absolute{
+      margin: -150px 0px 0px 15px;
+    }
+    #ship2, #ship3, #ship4{
+      padding: 0px 0px 220px 0px;
+    }
+    .textRight{
+      text-align: right;
+    }
+    .textRight h1{
+      margin-left: 70px;
+    }
+    footer > div > div > h4{
+      font-size: 14px;
+    }
+    footer > div > div > div p{
+      font-size: 16px;
+    }
+    footer > div > div > div > ul > li > a{
+      font-size: 18px;
+    }
+  }

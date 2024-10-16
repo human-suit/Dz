@@ -1,0 +1,150 @@
+@media (max-width:479px) {
+    body{
+      overflow-x: hidden;
+    }
+    .wrap{
+      height: 900px;
+      width: 329px;
+    }
+    .container{
+      width: 380px;
+      padding: 20px 10px;
+    }
+    header > div > div > nav{
+      opacity: 0;
+      visibility: hidden;
+      display: none;
+    }
+    .hamb__field{
+      visibility: visible;
+      display: block;
+      width: 100px;
+    }
+    .account > a{
+      visibility: hidden;
+      display: none;
+    }
+    .padding{
+      display: grid;
+    }
+    .left{
+      position: relative;
+      margin: -30px 0px 0px 0px;
+      writing-mode:horizontal-tb;
+      text-align: right;
+      z-index: 2;
+    }
+    .left > a > img{
+      margin: 0px 10px -5px 10px;
+    }
+    .center{
+      margin-top: 100px;
+      width: 360px;
+      margin-left: 0;
+    }
+    .border{
+      width: 60px;
+    }
+    .center h3{
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .center h1{
+      font-size: 30px;
+      line-height: 45px;
+    }
+    .body_midle{
+      width: 260px;
+    }
+    .foter_bot{
+      margin-top: 200px;
+    }
+    .foter_bot a{
+      font-weight: 14px;
+    }
+    .foter_bot > a > img{
+      margin-left: 20px;
+    }
+    .right{
+      position: absolute;
+      right: 0;
+      margin: 450px 20px 0px 0px;
+    }
+    .right li{
+      border-right: 3px solid rgb(124, 124, 124);
+    }
+    .white{
+      border-right: 3px solid white !important;
+    }
+    header{
+      position: absolute;
+    }
+    .block{
+      display: grid;
+      margin-left: -150px;
+      height: 800px;
+    }
+    .block img{
+      width: 300px;
+      height: 400px;
+      margin: 50px 0px 0px 180px;
+    }
+    .margin img{
+      width: 24px;
+      height: 24px;
+    }
+    .margin{
+      margin: 260px 0px 0px 150px;
+    }
+    .block > div > div > h1{
+      font-size: 24px;
+      width: 300px;
+      line-height: 32px;
+    }
+    .block > div > div > p{
+      font-size: 14px;
+      line-height: 32px;
+      width: 370px;
+    }
+    .block > div > div > a{
+      font-size: 14px;
+    }
+    .block > div > div > a > img{
+      margin: 0px 0px -10px 10px;
+    }
+    .block > div > div > h3{
+      font-size: 16px;
+      letter-spacing: 4px;
+    }
+    .position_absolute h2{
+      font-size: 100px;
+    }
+    .position_absolute{
+      margin: -150px 0px 0px 15px;
+    }
+    #ship2, #ship3, #ship4{
+      padding: 0px 0px 220px 0px;
+    }
+    .textRight{
+      text-align: right;
+    }
+    .textRight h1{
+      margin-left: 70px;
+    }
+    .swith {
+      position: absolute;
+      margin-top: 620px;
+    }
+    footer  > div > .flex{
+      display: grid;
+    }
+    footer > div > div > h4{
+      font-size: 14px;
+    }
+    footer > div > div > div p{
+      font-size: 16px;
+    }
+    footer > div > div > div > ul > li > a{
+      font-size: 18px;
+    }
+  } 
