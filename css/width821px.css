@@ -53,6 +53,7 @@
     }
     .margin{
       margin: 100px 0px 0px 20px;
+      width: 600px;
     }
     .block > div > div > h1{
       font-size: 38px;

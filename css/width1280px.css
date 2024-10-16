@@ -4,4 +4,8 @@
       line-height: 32px;
       width: 520px;
     }
+    .margin{
+      margin: 100px 0px 0px 100px;
+      width: 650px;
+    }
   }

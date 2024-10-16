@@ -95,6 +95,7 @@
     }
     .margin{
       margin: 260px 0px 0px 150px;
+      width: 400px;
     }
     .block > div > div > h1{
       font-size: 24px;
